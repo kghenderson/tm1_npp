@@ -1,0 +1,36 @@
+<NotepadPlus>
+    <UserLang name="TM1-RULES" ext=".rux">
+        <Settings>
+            <Global caseIgnored="yes" />
+            <TreatAsSymbol comment="no" commentLine="yes" />
+            <Prefix words1="yes" words2="no" words3="no" words4="no" />
+        </Settings>
+        <KeywordLists>
+            <Keywords name="Delimiters">&apos;00&apos;00</Keywords>
+            <Keywords name="Folder+">N S C #{</Keywords>
+            <Keywords name="Folder-">; ; ; #}</Keywords>
+            <Keywords name="Operators">- ! % &amp; ( ) * , / : @ [ \ ] ^ { | } + &lt; = &gt;</Keywords>
+            <Keywords name="Comment">1 2 0#</Keywords>
+            <Keywords name="Words1">ABS ACOS ASIN ATAN ATTRN ATTRS CAPIT CHAR CODE ConsolidateChildren ConsolidatedAvg ConsolidatedCount ConsolidatedMax ConsolidatedMin CONTINUE COS DATE DATES DAY DAYNO DB DELET DIMIX DIMNM DIMSIZ DNEXT DNLEV DTYPE ELCOMP ELCOMPN ELISANC ELISCOMP ELISPAR ELLEV ELPAR ELPARN ELWEIGHT EXP FEEDERS FEEDSTRINGS FILL FV INSRT INT ISLEAF ISUND LN LOG LONG LOWER MAX MIN MOD MONTH NOW NUMBR NValue PAYMT PV RAND ROUND ROUNDP SCAN SIGN SIN SKIPCHECK SQRT STET STR SUBST SValue TABDIM TAN TIME TIMST TIMVL TODAY TRIM UNDEF UNDEFVALS UPPER YEAR</Keywords>
+            <Keywords name="Words2"></Keywords>
+            <Keywords name="Words3"></Keywords>
+            <Keywords name="Words4"></Keywords>
+        </KeywordLists>
+        <Styles>
+            <WordsStyle name="DEFAULT" styleID="11" fgColor="4D4D4C" bgColor="FFFFFF" fontName="Lucida Console" fontStyle="0" />
+            <WordsStyle name="FOLDEROPEN" styleID="12" fgColor="4271AE" bgColor="FFFFFF" fontName="Lucida Console" fontStyle="0" />
+            <WordsStyle name="FOLDERCLOSE" styleID="13" fgColor="4271AE" bgColor="FFFFFF" fontName="Lucida Console" fontStyle="0" />
+            <WordsStyle name="KEYWORD1" styleID="5" fgColor="4271AE" bgColor="FFFFFF" fontName="Lucida Console" fontStyle="0" />
+            <WordsStyle name="KEYWORD2" styleID="6" fgColor="C82829" bgColor="FFFFFF" fontName="Lucida Console" fontStyle="0" />
+            <WordsStyle name="KEYWORD3" styleID="7" fgColor="808080" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="KEYWORD4" styleID="8" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="COMMENT" styleID="1" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="COMMENT LINE" styleID="2" fgColor="808080" bgColor="FFFFFF" fontName="Lucida Console" fontStyle="2" />
+            <WordsStyle name="NUMBER" styleID="4" fgColor="F5871F" bgColor="FFFFFF" fontName="Lucida Console" fontStyle="0" />
+            <WordsStyle name="OPERATOR" styleID="10" fgColor="4D4D4C" bgColor="FFFFFF" fontName="Lucida Console" fontStyle="0" />
+            <WordsStyle name="DELIMINER1" styleID="14" fgColor="718C00" bgColor="FFFFFF" fontName="Lucida Console" fontStyle="0" />
+            <WordsStyle name="DELIMINER2" styleID="15" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="DELIMINER3" styleID="16" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+        </Styles>
+    </UserLang>
+</NotepadPlus>

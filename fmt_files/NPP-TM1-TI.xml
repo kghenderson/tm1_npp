@@ -1,0 +1,36 @@
+<NotepadPlus>
+    <UserLang name="TM1-TI" ext=".pro">
+        <Settings>
+            <Global caseIgnored="yes" />
+            <TreatAsSymbol comment="no" commentLine="yes" />
+            <Prefix words1="yes" words2="yes" words3="no" words4="no" />
+        </Settings>
+        <KeywordLists>
+            <Keywords name="Delimiters">&apos;00&apos;00</Keywords>
+            <Keywords name="Folder+">IF WHILE #{</Keywords>
+            <Keywords name="Folder-">ENDIF END #}</Keywords>
+            <Keywords name="Operators">- ! % &amp; ( ) * , / : ; @ [ \ ] ^ { | } + &lt; = &gt;</Keywords>
+            <Keywords name="Comment">1 2 0#</Keywords>
+            <Keywords name="Words1">ABS ACOS ASIN ATAN ATTRN ATTRS BatchUpdateFinishWait BatchUpdateStart CAPIT CellGetN CellGetS CellIsUpdateable CHAR ChoreQuit CODE ConsolidatedAvg ConsolidatedCount ConsolidatedMax ConsolidatedMin COS CubeDataReservationGet CubeDataReservationGetConflicts CubeExists CubeGetLogChanges CubeProcessFeeders CubeSaveData CubeUnload DatasourceASCIIDecimalSeparator DatasourceASCIIDelimiter DatasourceASCIIHeaderRecords DatasourceASCIIQuoteCharacter DatasourceASCIIThousandSeparator DatasourceCubeview DatasourceDimensionSubset DatasourceNameForClient DatasourceNameForServer DataSourceODBOCatalog DataSourceODBOConnectionString DataSourceODBOCubeName DataSourceODBOHierarchyName DataSourceODBOLocation DataSourceODBOProvider DataSourceODBOSAPClientID DataSourceODBOSAPClientLanguage DatasourcePassword DatasourceQuery DataSourceSAPUsingRoleAuths DataSourceSAPUsingTexts DatasourceType DatasourceUsername DATE DATES DAY DAYNO DELET DeleteAllPersistentFeeders DimensionElementPrincipalName DimensionExists DIMIX DIMNM DIMSIZ DisableBulkLoadMode DNEXT DNLEV DTYPE ELCOMP ELCOMPN ElementSecurityGet ELISANC ELISCOMP ELISPAR ELLEV ELPAR ELPARN Else ElseIf ELWEIGHT EnableBulkLoadMode EXP Expand FileExists FILL ForceSkipCheck FV GetProcessErrorFileDirectory GetProcessErrorFilename GetProcessName GetUseActiveSandboxProperty INSRT INT ISUND ItemReject ItemSkip LN LOG LONG LOWER MAX MetadataMinorErrorCount MIN MinorErrorLogMax MOD MONTH NOW NumberToString NumberToStringEx NUMBR NumericGlobalVariable NumericSessionVariable ODBCClose ODBCOpen ODBCOpenEx OnMinorErrorDoItemSkip PAYMT ProcessBreak ProcessError ProcessQuit ProcessReturnCode PrologMinorErrorCount PV RAND RefreshMdxHierarchy ROUND ROUNDP SaveDataAll SCAN SecurityRefresh ServerActiveSandboxGet SetChoreVerboseMessages SetInputCharacterSet SetODBCUnicodeInterface SetOutputCharacterSet SIGN SIN SQRT STR StringGlobalVariable StringSessionVariable StringToNumber StringToNumberEx SubsetExists SubsetGetElementName SubsetGetSize SubsetIsAllSet SUBST Synchronized TABDIM TAN TextOutput TIME TIMST TIMVL TM1User TODAY TRIM UNDEF UPPER Value_Is_String ViewConstruct ViewExists WildcardFileSearch YEAR</Keywords>
+            <Keywords name="Words2">AddClient AddCubeDependency AddGroup AddInfoCubeRestriction ASCIIDelete ASCIIOutput AssignClientPassword AssignClientToGroup AttrDelete AttrInsert AttrPutN AttrPutS BatchUpdateFinish CellPutN CellPutProportionalSpread CellPutS CubeClearData CubeCreate CubeDataReservationAcquire CubeDataReservationRelease CubeDataReservationReleaseAll CubeDestroy CubeSetConnParams CubeSetLogChanges DeleteClient DeleteGroup DimensionCreate DimensionDeleteAllElements DimensionDestroy DimensionElementComponentAdd DimensionElementComponentDelete DimensionElementDelete DimensionElementInsert DimensionSortOrder ElementSecurityPut ExecuteCommand ExecuteProcess ODBCOutput PublishView RemoveClientFromGroup RuleLoadFromFile ServerActiveSandboxSet ServerSandboxesDelete ServerShutDown SetUseActiveSandboxProperty SubsetAliasSet SubsetCreate SubsetCreatebyMDX SubsetDeleteAllElements SubsetDestroy SubsetElementDelete SubsetElementInsert SubsetExpandAboveSet SubsetFormatStyleSet ViewColumnDimensionSet ViewColumnSuppressZeroesSet ViewCreate ViewDestroy ViewExtractSkipCalcsSet ViewExtractSkipRuleValuesSet ViewExtractSkipZeroesSet ViewRowDimensionSet ViewRowSuppressZeroesSet ViewSubsetAssign ViewSuppressZeroesSet ViewTitleDimensionSet ViewTitleElementSet ViewZeroOut</Keywords>
+            <Keywords name="Words3"></Keywords>
+            <Keywords name="Words4"></Keywords>
+        </KeywordLists>
+        <Styles>
+            <WordsStyle name="DEFAULT" styleID="11" fgColor="4D4D4C" bgColor="FFFFFF" fontName="Lucida Console" fontStyle="0" fontSize="10" />
+            <WordsStyle name="FOLDEROPEN" styleID="12" fgColor="4271AE" bgColor="FFFFFF" fontName="Lucida Console" fontStyle="0" fontSize="10" />
+            <WordsStyle name="FOLDERCLOSE" styleID="13" fgColor="4271AE" bgColor="FFFFFF" fontName="Lucida Console" fontStyle="0" fontSize="10" />
+            <WordsStyle name="KEYWORD1" styleID="5" fgColor="4271AE" bgColor="FFFFFF" fontName="Lucida Console" fontStyle="0" fontSize="10" />
+            <WordsStyle name="KEYWORD2" styleID="6" fgColor="C82829" bgColor="FFFFFF" fontName="Lucida Console" fontStyle="0" fontSize="10" />
+            <WordsStyle name="KEYWORD3" styleID="7" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="KEYWORD4" styleID="8" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="COMMENT" styleID="1" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="COMMENT LINE" styleID="2" fgColor="808080" bgColor="FFFFFF" fontName="Lucida Console" fontStyle="2" fontSize="10" />
+            <WordsStyle name="NUMBER" styleID="4" fgColor="F5871F" bgColor="FFFFFF" fontName="Lucida Console" fontStyle="0" fontSize="10" />
+            <WordsStyle name="OPERATOR" styleID="10" fgColor="4D4D4C" bgColor="FFFFFF" fontName="Lucida Console" fontStyle="0" fontSize="10" />
+            <WordsStyle name="DELIMINER1" styleID="14" fgColor="718C00" bgColor="FFFFFF" fontName="Lucida Console" fontStyle="0" fontSize="10" />
+            <WordsStyle name="DELIMINER2" styleID="15" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="DELIMINER3" styleID="16" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+        </Styles>
+    </UserLang>
+</NotepadPlus>

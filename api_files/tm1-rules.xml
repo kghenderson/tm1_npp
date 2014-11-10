@@ -1,0 +1,1768 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<NotepadPlus>
+    <AutoComplete language="TM1-Rules">
+        <Environment ignoreCase="yes" startFunc="(" stopFunc=")" paramSeparator="," terminal=";" />
+        <KeyWord name="ABS" func="yes">
+            <Overload retVal="Number" descr="ABS returns the absolute value of a number.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ACOS" func="yes">
+            <Overload retVal="Number" descr="ACOS returns the angle, in radians, whose cosine is x.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ASIN" func="yes">
+            <Overload retVal="Number" descr="ASIN returns the angle, in radians, whose sine is x.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ATAN" func="yes">
+            <Overload retVal="Number" descr="ATAN returns the angle, in radians, whose tangent is x. The result is between -pi/2 and +pi/2.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ATTRN" func="yes">
+            <Overload retVal="Number" descr="ATTRN returns a numeric attribute for a specified element of a dimension.">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+                <Param name="Attribute str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ATTRS" func="yes">
+            <Overload retVal="String" descr="ATTRS returns a string attribute for a specified element of a dimension.">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+                <Param name="Attribute str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="CAPIT" func="yes">
+            <Overload retVal="String" descr="CAPIT applies initial capitalization to every word in a string.">
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="CHAR" func="yes">
+            <Overload retVal="Char" descr="CHAR returns the character identified by a given ASCII numeric code.">
+                <Param name="Number int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="CODE" func="yes">
+            <Overload retVal="Int" descr="CODE returns the ASCII numeric code for a specified character within a string.">
+                <Param name="String str" />
+                <Param name="Location int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ConsolidateChildren" func="yes">
+            <Overload retVal="Number" descr="This function forces consolidated values to be calculated by summing immediate children along a specified dimension. This is useful when intermediate consolidations are calculated by rules and you want a parent consolidation to be calculated by summing the intermediate consolidations rather than by summing the underlying leaf values.">
+                <Param name="Dimension1 str" />
+                <Param name="Dimension2 str" />
+                <Param name="…" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="CONTINUE" />
+        <KeyWord name="COS" func="yes">
+            <Overload retVal="Number" descr="COS returns the cosine of an angle expressed in radians.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DATE" func="yes">
+            <Overload retVal="String" descr="DATE returns the date string in 'yy-mm-dd' or 'yyyy-mm-dd' format for a given serial number.">
+                <Param name="SerialNumber int" />
+                <Param name="<ReturnFourDigitYear> bit" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DATES" func="yes">
+            <Overload retVal="String" descr="DATES returns a date string, in the form 'yy-mm-dd' or 'yyyy-mm-dd', corresponding to a given year, month, and day.">
+                <Param name="Year int" />
+                <Param name="Month int" />
+                <Param name="Day int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DAY" func="yes">
+            <Overload retVal="Int" descr="DAY returns a numeric value for the day in a given date string. A date string in either YY-MM-DD or YYYY-MM-DD format.">
+                <Param name="DateString str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DAYNO" func="yes">
+            <Overload retVal="Date" descr="DAYNO returns the serial date number corresponding to a given date string.">
+                <Param name="DateString str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DB" func="yes">
+            <Overload retVal="Variant" descr="DB returns a value from a cube in a TM1 database. DB returns a numeric value if used in a numeric expression and a string value if used in a string expression.">
+                <Param name="Cube str" />
+                <Param name="E1 str" />
+                <Param name="E2 str" />
+                <Param name="[...e256 str]" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DELET" func="yes">
+            <Overload retVal="String" descr="DELET returns the result of deleting a specified number of characters from a specified starting point within a string.">
+                <Param name="String str" />
+                <Param name="Start int" />
+                <Param name="Length int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DIMIX" func="yes">
+            <Overload retVal="Int" descr="DIMIX returns the index number of an element within a dimension.">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DIMNM" func="yes">
+            <Overload retVal="String" descr="DIMNM returns the element of a dimension that corresponds to the index argument.">
+                <Param name="Dimension str" />
+                <Param name="Index int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DIMSIZ" func="yes">
+            <Overload retVal="Int" descr="DIMSIZ returns the number of elements within a specified dimension.">
+                <Param name="Dimension str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DNEXT" func="yes">
+            <Overload retVal="String" descr="DNEXT returns the element name that follows the element specified as an argument to the function.">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DNLEV" func="yes">
+            <Overload retVal="Int" descr="DNLEV returns the number levels in a dimension.">
+                <Param name="Dimension str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DTYPE" func="yes">
+            <Overload retVal="Char" descr="DTYPE returns information about the element type of a specified element. It returns N if the element is a numeric element, S if the element is a string element, and C if the element is a consolidated element.">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELCOMP" func="yes">
+            <Overload retVal="String" descr="ELCOMP returns the name of a child of a consolidated element in a specified dimension. If the element argument is not a consolidated element, the function returns 0.">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+                <Param name="Position int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELCOMPN" func="yes">
+            <Overload retVal="Int" descr="ELCOMPN returns the number of components in a specified element.">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELISANC" func="yes">
+            <Overload retVal="Bit" descr="ELISANC determines whether element1 is an ancestor of element2 in the specified dimension.">
+                <Param name="Dimension str" />
+                <Param name="ParentElement str" />
+                <Param name="ChildElement str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELISCOMP" func="yes">
+            <Overload retVal="Bit" descr="ELISCOMP determines whether element1 is a child of element2 in the specified dimension.">
+                <Param name="Dimension str" />
+                <Param name="ChildElement str" />
+                <Param name="ParentElement str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELISPAR" func="yes">
+            <Overload retVal="Bit" descr="ELISPAR determines whether element1 is a parent of element2 in the specified dimension.">
+                <Param name="Dimension str" />
+                <Param name="ParentElement str" />
+                <Param name="ChildElement str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELLEV" func="yes">
+            <Overload retVal="Int" descr="ELLEV returns the level of an element within a dimension.">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELPAR" func="yes">
+            <Overload retVal="String" descr="ELPAR returns the parent of an element in a specified dimension.">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+                <Param name="Index int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELPARN" func="yes">
+            <Overload retVal="Int" descr="ELPARN returns the number of parents of an element in a specified dimension.">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELWEIGHT" func="yes">
+            <Overload retVal="Number" descr="ELWEIGHT returns the weight of a child in a consolidated element.">
+                <Param name="Dimension str" />
+                <Param name="Element1 str" />
+                <Param name="Element2 str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="EXP" func="yes">
+            <Overload retVal="Number" descr="EXP returns the natural anti-log of a number.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="FEEDERS" />
+        <KeyWord name="FEEDSTRINGS" />
+        <KeyWord name="FILL" func="yes">
+            <Overload retVal="String" descr="FILL repeats a given string as necessary to return a string of a specified length.">
+                <Param name="String str" />
+                <Param name="Length int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="FV" func="yes">
+            <Overload retVal="Number" descr="FV returns the value of an annuity at the time of the last payment. An annuity is a series of payments made at equal intervals of time. Payments are assumed to be made at the end of each period.">
+                <Param name="Payment int" />
+                <Param name="Interest int" />
+                <Param name="Periods int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="INSRT" func="yes">
+            <Overload retVal="String" descr="INSRT inserts one string into another string at a specified insertion point.">
+                <Param name="String1 str" />
+                <Param name="String2 str" />
+                <Param name="Location int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="INT" func="yes">
+            <Overload retVal="Int" descr="INT returns the largest integer that is less than or equal to a specified value.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ISLEAF" func="yes">
+            <Overload retVal="Bit" descr="ISLEAF returns 1 if a specified cell is a leaf cell (identified solely by leaf/simple elements). If the specified cell is identified by any consolidated elements, the function returns 0.">
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ISUND" func="yes">
+            <Overload retVal="Bit" descr="ISUND returns 1 if a specified value is undefined; otherwise it returns 0.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="LN" func="yes">
+            <Overload retVal="Number" descr="LN returns the natural logarithm (base e) of a number.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="LOG" func="yes">
+            <Overload retVal="Number" descr="LOG returns the base 10 logarithm of a positive number.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="LONG" func="yes">
+            <Overload retVal="Int" descr="LONG returns the length of a string.">
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="LOWER" func="yes">
+            <Overload retVal="String" descr="LOWER converts all upper case characters in a string to lower case.">
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="MAX" func="yes">
+            <Overload retVal="Number" descr="MAX returns the largest number in a pair of values.">
+                <Param name="Value1 int" />
+                <Param name="Value2 int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="MIN" func="yes">
+            <Overload retVal="Number" descr="MIN returns the smallest number in a pair of values.">
+                <Param name="Value1 int" />
+                <Param name="Value2 int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="MOD" func="yes">
+            <Overload retVal="Int" descr="MOD returns the remainder of dividing a number by a divisor.">
+                <Param name="Number int" />
+                <Param name="Divisor int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="MONTH" func="yes">
+            <Overload retVal="Int" descr="MONTH returns a numeric value for the month in a given date string. A date string in either YY-MM-DD or YYYY-MM-DD format.">
+                <Param name="DateString str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="NOW" func="yes">
+            <Overload retVal="Date" descr="NOW returns the current date/time value in serial number format.">
+            </Overload>
+        </KeyWord>
+        <KeyWord name="NUMBR" func="yes">
+            <Overload retVal="Number" descr="NUMBR converts a string to a number.">
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="PAYMT" func="yes">
+            <Overload retVal="Number" descr="PAYMT returns the payment amount of an annuity based on a given initial value or principal, an interest rate, and a number of periods. An annuity is a series of payments made at equal intervals of time.">
+                <Param name="Principal int" />
+                <Param name="Interest int" />
+                <Param name="Periods int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="PV" func="yes">
+            <Overload retVal="Number" descr="PV returns the initial or principal value of an annuity.">
+                <Param name="Payment int" />
+                <Param name="Interest int" />
+                <Param name="Periods int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="RAND" func="yes">
+            <Overload retVal="Number" descr="RAND generates a random number that is uniformly distributed between 0 and 1. The random number generator is seeded when TM1 is loaded.">
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ROUND" func="yes">
+            <Overload retVal="Number" descr="ROUND rounds a given number to the nearest integer. Rounding can be done in a variety of valid ways.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ROUNDP" func="yes">
+            <Overload retVal="Number" descr="ROUNDP rounds a given number at a specified decimal precision.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="SCAN" func="yes">
+            <Overload retVal="Int" descr="SCAN returns a number indicating the starting location of the first occurrence of a specified substring within a given string. If the substring does not occur in the given string, the function returns zero.">
+                <Param name="Substring str" />
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="SIGN" func="yes">
+            <Overload retVal="Number" descr="SIGN determines if a number is positive, negative, or zero. The function returns 1 if the number is positive, -1 if the number is negative, and 0 if the number is zero.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="SIN" func="yes">
+            <Overload retVal="Number" descr="SIN returns the sine of a given angle.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="SKIPCHECK" />
+        <KeyWord name="SQRT" func="yes">
+            <Overload retVal="Number" descr="SQRT returns the square root of a given value.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="STET" />
+        <KeyWord name="STR" func="yes">
+            <Overload retVal="String" descr="STR converts a number to a string.">
+                <Param name="Number int" />
+                <Param name="Length int" />
+                <Param name="Decimal int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="SUBST" func="yes">
+            <Overload retVal="String" descr="SUBST returns a substring of a given string.">
+                <Param name="String str" />
+                <Param name="Start int" />
+                <Param name="Length int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TABDIM" func="yes">
+            <Overload retVal="String" descr="TABDIM returns the dimension name that corresponds to the index argument.">
+                <Param name="Cube str" />
+                <Param name="Index int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TAN" func="yes">
+            <Overload retVal="Number" descr="TAN returns the tangent of a given angle.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TIME" func="yes">
+            <Overload retVal="String" descr="TIME returns a string, in HH:MM format, representing the system time on the TM1 server.">
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TIMST" func="yes">
+            <Overload retVal="String" descr="TIMST returns a formatted date/time string.">
+                <Param name="DateTime int" />
+                <Param name="Format str" />
+                <Param name="ExtendedYears bit" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TIMVL" func="yes">
+            <Overload retVal="Int" descr="TIMVL returns the numeric value of a component (year, month, etc.) of a date/time value.">
+                <Param name="DateTime int" />
+                <Param name="Type str" />
+                <Param name="ExtendedYears bit" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TODAY" func="yes">
+            <Overload retVal="String" descr="TODAY returns the current date in yy-mm-dd format.">
+                <Param name="ReturnFourDigitYear bit" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TRIM" func="yes">
+            <Overload retVal="String" descr="TRIM returns the result of trimming any leading and trailing blanks from a string.">
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="UNDEF" func="yes">
+            <Overload retVal="Undef" descr="UNDEF returns the undefined value. This function can be used to prevent datafrom being stored in a cube based on a logical test.">
+            </Overload>
+        </KeyWord>
+        <KeyWord name="UNDEFVALS" />
+        <KeyWord name="UPPER" func="yes">
+            <Overload retVal="String" descr="UPPER converts a text string to upper case.">
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="YEAR" func="yes">
+            <Overload retVal="Int" descr="YEAR returns a numeric value for the year in a given date string.">
+                <Param name="DateString str" />
+            </Overload>
+        </KeyWord>
+    </AutoComplete>
+</NotepadPlus><?xml version="1.0" encoding="Windows-1252" ?>
+<NotepadPlus>
+    <AutoComplete language="TM1-Rules">
+        <Environment ignoreCase="yes" startFunc="(" stopFunc=")" paramSeparator="," terminal=";" />
+        <KeyWord name="ACOS" func="yes">
+            <Overload retVal="Number" descr="ACOS returns the angle, in radians, whose cosine is x.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ASIN" func="yes">
+            <Overload retVal="Number" descr="ASIN returns the angle, in radians, whose sine is x.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ATAN" func="yes">
+            <Overload retVal="Number" descr="ATAN returns the angle, in radians, whose tangent is x. The result is between -pi/2 and +pi/2.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ATTRN" func="yes">
+            <Overload retVal="Number" descr="ATTRN returns a numeric attribute for a specified element of a dimension.">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+                <Param name="Attribute str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ATTRS" func="yes">
+            <Overload retVal="String" descr="ATTRS returns a string attribute for a specified element of a dimension.">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+                <Param name="Attribute str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="CAPIT" func="yes">
+            <Overload retVal="String" descr="CAPIT applies initial capitalization to every word in a string.">
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="CHAR" func="yes">
+            <Overload retVal="Char" descr="CHAR returns the character identified by a given ASCII numeric code.">
+                <Param name="Number int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="CODE" func="yes">
+            <Overload retVal="Int" descr="CODE returns the ASCII numeric code for a specified character within a string.">
+                <Param name="String str" />
+                <Param name="Location int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ConsolidateChildren" func="yes">
+            <Overload retVal="Number" descr="This function forces consolidated values to be calculated by summing immediate children along a specified dimension. This is useful when intermediate consolidations are calculated by rules and you want a parent consolidation to be calculated by summing the intermediate consolidations rather than by summing the underlying leaf values.">
+                <Param name="Dimension1 str" />
+                <Param name="Dimension2 str" />
+                <Param name="…" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ConsolidatedAvg" func="yes">
+            <Overload retVal="Number" descr="This function calculates the average value in a consolidation and returns a single value.">
+                <Param name="flag-value int" />
+                <Param name="cube-name str" />
+                <Param name="element_1 str" />
+                <Param name="element_2 str" />
+                <Param name="..." />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ConsolidatedCount" func="yes">
+            <Overload retVal="Number" descr="This function counts the value in a consolidation and returns a single value.">
+                <Param name="flag-value int" />
+                <Param name="cube-name str" />
+                <Param name="element_1 str" />
+                <Param name="element_2 str" />
+                <Param name="..." />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ConsolidatedMax" func="yes">
+            <Overload retVal="Number" descr="This function calculates the maximum value in a consolidation and returns a single value.">
+                <Param name="flag-value int" />
+                <Param name="cube-name str" />
+                <Param name="element_1 str" />
+                <Param name="element_2 str" />
+                <Param name="..." />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ConsolidatedMin" func="yes">
+            <Overload retVal="Number" descr="This function calculates the minimum value in a consolidation and returns a single value.">
+                <Param name="flag-value int" />
+                <Param name="cube-name str" />
+                <Param name="element_1 str" />
+                <Param name="element_2 str" />
+                <Param name="..." />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="CONTINUE" />
+        <KeyWord name="COS" func="yes">
+            <Overload retVal="Number" descr="COS returns the cosine of an angle expressed in radians.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DATE" func="yes">
+            <Overload retVal="String" descr="DATE returns the date string in 'yy-mm-dd' or 'yyyy-mm-dd' format for a given serial number.">
+                <Param name="SerialNumber int" />
+                <Param name="<ReturnFourDigitYear> bit" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DATES" func="yes">
+            <Overload retVal="String" descr="DATES returns a date string, in the form 'yy-mm-dd' or 'yyyy-mm-dd', corresponding to a given year, month, and day.">
+                <Param name="Year int" />
+                <Param name="Month int" />
+                <Param name="Day int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DAY" func="yes">
+            <Overload retVal="Int" descr="DAY returns a numeric value for the day in a given date string. A date string in either YY-MM-DD or YYYY-MM-DD format.">
+                <Param name="DateString str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DAYNO" func="yes">
+            <Overload retVal="Date" descr="DAYNO returns the serial date number corresponding to a given date string.">
+                <Param name="DateString str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DB" func="yes">
+            <Overload retVal="Variant" descr="DB returns a value from a cube in a TM1 database. DB returns a numeric value if used in a numeric expression and a string value if used in a string expression.">
+                <Param name="Cube str" />
+                <Param name="E1 str" />
+                <Param name="E2 str" />
+                <Param name="[...e256 str]" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DELET" func="yes">
+            <Overload retVal="String" descr="DELET returns the result of deleting a specified number of characters from a specified starting point within a string.">
+                <Param name="String str" />
+                <Param name="Start int" />
+                <Param name="Length int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DIMIX" func="yes">
+            <Overload retVal="Int" descr="DIMIX returns the index number of an element within a dimension.">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DIMNM" func="yes">
+            <Overload retVal="String" descr="DIMNM returns the element of a dimension that corresponds to the index argument.">
+                <Param name="Dimension str" />
+                <Param name="Index int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DIMSIZ" func="yes">
+            <Overload retVal="Int" descr="DIMSIZ returns the number of elements within a specified dimension.">
+                <Param name="Dimension str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DNEXT" func="yes">
+            <Overload retVal="String" descr="DNEXT returns the element name that follows the element specified as an argument to the function.">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DNLEV" func="yes">
+            <Overload retVal="Int" descr="DNLEV returns the number levels in a dimension.">
+                <Param name="Dimension str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DTYPE" func="yes">
+            <Overload retVal="Char" descr="DTYPE returns information about the element type of a specified element. It returns N if the element is a numeric element, S if the element is a string element, and C if the element is a consolidated element.">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELCOMP" func="yes">
+            <Overload retVal="String" descr="ELCOMP returns the name of a child of a consolidated element in a specified dimension. If the element argument is not a consolidated element, the function returns 0.">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+                <Param name="Position int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELCOMPN" func="yes">
+            <Overload retVal="Int" descr="ELCOMPN returns the number of components in a specified element.">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELISANC" func="yes">
+            <Overload retVal="Bit" descr="ELISANC determines whether element1 is an ancestor of element2 in the specified dimension.">
+                <Param name="Dimension str" />
+                <Param name="ParentElement str" />
+                <Param name="ChildElement str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELISCOMP" func="yes">
+            <Overload retVal="Bit" descr="ELISCOMP determines whether element1 is a child of element2 in the specified dimension.">
+                <Param name="Dimension str" />
+                <Param name="ChildElement str" />
+                <Param name="ParentElement str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELISPAR" func="yes">
+            <Overload retVal="Bit" descr="ELISPAR determines whether element1 is a parent of element2 in the specified dimension.">
+                <Param name="Dimension str" />
+                <Param name="ParentElement str" />
+                <Param name="ChildElement str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELLEV" func="yes">
+            <Overload retVal="Int" descr="ELLEV returns the level of an element within a dimension.">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELPAR" func="yes">
+            <Overload retVal="String" descr="ELPAR returns the parent of an element in a specified dimension.">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+                <Param name="Index int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELPARN" func="yes">
+            <Overload retVal="Int" descr="ELPARN returns the number of parents of an element in a specified dimension.">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELWEIGHT" func="yes">
+            <Overload retVal="Number" descr="ELWEIGHT returns the weight of a child in a consolidated element.">
+                <Param name="Dimension str" />
+                <Param name="Element1 str" />
+                <Param name="Element2 str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="EXP" func="yes">
+            <Overload retVal="Number" descr="EXP returns the natural anti-log of a number.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="FEEDERS" />
+        <KeyWord name="FEEDSTRINGS" />
+        <KeyWord name="FILL" func="yes">
+            <Overload retVal="String" descr="FILL repeats a given string as necessary to return a string of a specified length.">
+                <Param name="String str" />
+                <Param name="Length int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="FV" func="yes">
+            <Overload retVal="Number" descr="FV returns the value of an annuity at the time of the last payment. An annuity is a series of payments made at equal intervals of time. Payments are assumed to be made at the end of each period.">
+                <Param name="Payment int" />
+                <Param name="Interest int" />
+                <Param name="Periods int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="INSRT" func="yes">
+            <Overload retVal="String" descr="INSRT inserts one string into another string at a specified insertion point.">
+                <Param name="String1 str" />
+                <Param name="String2 str" />
+                <Param name="Location int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="INT" func="yes">
+            <Overload retVal="Int" descr="INT returns the largest integer that is less than or equal to a specified value.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ISLEAF" func="yes">
+            <Overload retVal="Bit" descr="ISLEAF returns 1 if a specified cell is a leaf cell (identified solely by leaf/simple elements). If the specified cell is identified by any consolidated elements, the function returns 0.">
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ISUND" func="yes">
+            <Overload retVal="Bit" descr="ISUND returns 1 if a specified value is undefined; otherwise it returns 0.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="LN" func="yes">
+            <Overload retVal="Number" descr="LN returns the natural logarithm (base e) of a number.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="LOG" func="yes">
+            <Overload retVal="Number" descr="LOG returns the base 10 logarithm of a positive number.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="LONG" func="yes">
+            <Overload retVal="Int" descr="LONG returns the length of a string.">
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="LOWER" func="yes">
+            <Overload retVal="String" descr="LOWER converts all upper case characters in a string to lower case.">
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="MAX" func="yes">
+            <Overload retVal="Number" descr="MAX returns the largest number in a pair of values.">
+                <Param name="Value1 int" />
+                <Param name="Value2 int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="MIN" func="yes">
+            <Overload retVal="Number" descr="MIN returns the smallest number in a pair of values.">
+                <Param name="Value1 int" />
+                <Param name="Value2 int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="MOD" func="yes">
+            <Overload retVal="Int" descr="MOD returns the remainder of dividing a number by a divisor.">
+                <Param name="Number int" />
+                <Param name="Divisor int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="MONTH" func="yes">
+            <Overload retVal="Int" descr="MONTH returns a numeric value for the month in a given date string. A date string in either YY-MM-DD or YYYY-MM-DD format.">
+                <Param name="DateString str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="NOW" func="yes">
+            <Overload retVal="Date" descr="NOW returns the current date/time value in serial number format.">
+            </Overload>
+        </KeyWord>
+        <KeyWord name="NUMBR" func="yes">
+            <Overload retVal="Number" descr="NUMBR converts a string to a number.">
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="NValue" func="yes">
+            <Overload retVal="Number" descr="When the DatasourceType is 'VIEW', this TurboIntegrator local variable determines the value of the current cell when Value_Is_String is 0. (That is, when the current cell is numeric.)">
+            </Overload>
+        </KeyWord>
+        <KeyWord name="PAYMT" func="yes">
+            <Overload retVal="Number" descr="PAYMT returns the payment amount of an annuity based on a given initial value or principal, an interest rate, and a number of periods. An annuity is a series of payments made at equal intervals of time.">
+                <Param name="Principal int" />
+                <Param name="Interest int" />
+                <Param name="Periods int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="PV" func="yes">
+            <Overload retVal="Number" descr="PV returns the initial or principal value of an annuity.">
+                <Param name="Payment int" />
+                <Param name="Interest int" />
+                <Param name="Periods int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="RAND" func="yes">
+            <Overload retVal="Number" descr="RAND generates a random number that is uniformly distributed between 0 and 1. The random number generator is seeded when TM1 is loaded.">
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ROUND" func="yes">
+            <Overload retVal="Number" descr="ROUND rounds a given number to the nearest integer. Rounding can be done in a variety of valid ways.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ROUNDP" func="yes">
+            <Overload retVal="Number" descr="ROUNDP rounds a given number at a specified decimal precision.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="SCAN" func="yes">
+            <Overload retVal="Int" descr="SCAN returns a number indicating the starting location of the first occurrence of a specified substring within a given string. If the substring does not occur in the given string, the function returns zero.">
+                <Param name="Substring str" />
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="SIGN" func="yes">
+            <Overload retVal="Number" descr="SIGN determines if a number is positive, negative, or zero. The function returns 1 if the number is positive, -1 if the number is negative, and 0 if the number is zero.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="SIN" func="yes">
+            <Overload retVal="Number" descr="SIN returns the sine of a given angle.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="SKIPCHECK" />
+        <KeyWord name="SQRT" func="yes">
+            <Overload retVal="Number" descr="SQRT returns the square root of a given value.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="STET" />
+        <KeyWord name="STR" func="yes">
+            <Overload retVal="String" descr="STR converts a number to a string.">
+                <Param name="Number int" />
+                <Param name="Length int" />
+                <Param name="Decimal int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="SUBST" func="yes">
+            <Overload retVal="String" descr="SUBST returns a substring of a given string.">
+                <Param name="String str" />
+                <Param name="Start int" />
+                <Param name="Length int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="SValue" func="yes">
+            <Overload retVal="String" descr="When the DatasourceType is 'VIEW', this TurboIntegrator local variable determines the value of the current cell when Value_Is_String is not 0. (That is, when the current cell contains a string.)">
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TABDIM" func="yes">
+            <Overload retVal="String" descr="TABDIM returns the dimension name that corresponds to the index argument.">
+                <Param name="Cube str" />
+                <Param name="Index int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TAN" func="yes">
+            <Overload retVal="Number" descr="TAN returns the tangent of a given angle.">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TIME" func="yes">
+            <Overload retVal="String" descr="TIME returns a string, in HH:MM format, representing the system time on the TM1 server.">
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TIMST" func="yes">
+            <Overload retVal="String" descr="TIMST returns a formatted date/time string.">
+                <Param name="DateTime int" />
+                <Param name="Format str" />
+                <Param name="ExtendedYears bit" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TIMVL" func="yes">
+            <Overload retVal="Int" descr="TIMVL returns the numeric value of a component (year, month, etc.) of a date/time value.">
+                <Param name="DateTime int" />
+                <Param name="Type str" />
+                <Param name="ExtendedYears bit" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TODAY" func="yes">
+            <Overload retVal="String" descr="TODAY returns the current date in yy-mm-dd format.">
+                <Param name="ReturnFourDigitYear bit" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TRIM" func="yes">
+            <Overload retVal="String" descr="TRIM returns the result of trimming any leading and trailing blanks from a string.">
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="UNDEF" func="yes">
+            <Overload retVal="Undef" descr="UNDEF returns the undefined value. This function can be used to prevent datafrom being stored in a cube based on a logical test.">
+            </Overload>
+        </KeyWord>
+        <KeyWord name="UNDEFVALS" />
+        <KeyWord name="UPPER" func="yes">
+            <Overload retVal="String" descr="UPPER converts a text string to upper case.">
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="YEAR" func="yes">
+            <Overload retVal="Int" descr="YEAR returns a numeric value for the year in a given date string.">
+                <Param name="DateString str" />
+            </Overload>
+        </KeyWord>
+    </AutoComplete>
+</NotepadPlus>
+<?xml version="1.0" encoding="Windows-1252" ?>
+<NotepadPlus>
+    <AutoComplete language="TM1-Rules">
+        <Environment ignoreCase="yes" startFunc="(" stopFunc=")" paramSeparator="," terminal=";" />
+        <KeyWord name="ACOS" func="yes">
+            <Overload retVal="Number" descr="54">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ASIN" func="yes">
+            <Overload retVal="Number" descr="52">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ATAN" func="yes">
+            <Overload retVal="Number" descr="94">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ATTRN" func="yes">
+            <Overload retVal="Number" descr="73">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+                <Param name="Attribute str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ATTRS" func="yes">
+            <Overload retVal="String" descr="72">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+                <Param name="Attribute str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="CAPIT" func="yes">
+            <Overload retVal="String" descr="63">
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="CHAR" func="yes">
+            <Overload retVal="Char" descr="68">
+                <Param name="Number int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="CODE" func="yes">
+            <Overload retVal="Int" descr="78">
+                <Param name="String str" />
+                <Param name="Location int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ConsolidateChildren" func="yes">
+            <Overload retVal="Number" descr="335">
+                <Param name="Dimension1 str" />
+                <Param name="Dimension2 str" />
+                <Param name="…" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ConsolidatedAvg" func="yes">
+            <Overload retVal="Number" descr="89">
+                <Param name="flag-value int" />
+                <Param name="cube-name str" />
+                <Param name="element_1 str" />
+                <Param name="element_2 str" />
+                <Param name="..." />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ConsolidatedCount" func="yes">
+            <Overload retVal="Number" descr="77">
+                <Param name="flag-value int" />
+                <Param name="cube-name str" />
+                <Param name="element_1 str" />
+                <Param name="element_2 str" />
+                <Param name="..." />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ConsolidatedMax" func="yes">
+            <Overload retVal="Number" descr="89">
+                <Param name="flag-value int" />
+                <Param name="cube-name str" />
+                <Param name="element_1 str" />
+                <Param name="element_2 str" />
+                <Param name="..." />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ConsolidatedMin" func="yes">
+            <Overload retVal="Number" descr="89">
+                <Param name="flag-value int" />
+                <Param name="cube-name str" />
+                <Param name="element_1 str" />
+                <Param name="element_2 str" />
+                <Param name="..." />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="CONTINUE" />
+        <KeyWord name="COS" func="yes">
+            <Overload retVal="Number" descr="56">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DATE" func="yes">
+            <Overload retVal="String" descr="93">
+                <Param name="SerialNumber int" />
+                <Param name="<ReturnFourDigitYear> bit" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DATES" func="yes">
+            <Overload retVal="String" descr="115">
+                <Param name="Year int" />
+                <Param name="Month int" />
+                <Param name="Day int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DAY" func="yes">
+            <Overload retVal="Int" descr="118">
+                <Param name="DateString str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DAYNO" func="yes">
+            <Overload retVal="Date" descr="74">
+                <Param name="DateString str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DB" func="yes">
+            <Overload retVal="Variant" descr="159">
+                <Param name="Cube str" />
+                <Param name="E1 str" />
+                <Param name="E2 str" />
+                <Param name="[...e256 str]" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DELET" func="yes">
+            <Overload retVal="String" descr="118">
+                <Param name="String str" />
+                <Param name="Start int" />
+                <Param name="Length int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DIMIX" func="yes">
+            <Overload retVal="Int" descr="64">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DIMNM" func="yes">
+            <Overload retVal="String" descr="80">
+                <Param name="Dimension str" />
+                <Param name="Index int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DIMSIZ" func="yes">
+            <Overload retVal="Int" descr="67">
+                <Param name="Dimension str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DNEXT" func="yes">
+            <Overload retVal="String" descr="97">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DNLEV" func="yes">
+            <Overload retVal="Int" descr="47">
+                <Param name="Dimension str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DTYPE" func="yes">
+            <Overload retVal="Char" descr="208">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELCOMP" func="yes">
+            <Overload retVal="String" descr="165">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+                <Param name="Position int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELCOMPN" func="yes">
+            <Overload retVal="Int" descr="64">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELISANC" func="yes">
+            <Overload retVal="Bit" descr="90">
+                <Param name="Dimension str" />
+                <Param name="ParentElement str" />
+                <Param name="ChildElement str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELISCOMP" func="yes">
+            <Overload retVal="Bit" descr="87">
+                <Param name="Dimension str" />
+                <Param name="ChildElement str" />
+                <Param name="ParentElement str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELISPAR" func="yes">
+            <Overload retVal="Bit" descr="87">
+                <Param name="Dimension str" />
+                <Param name="ParentElement str" />
+                <Param name="ChildElement str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELLEV" func="yes">
+            <Overload retVal="Int" descr="57">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELPAR" func="yes">
+            <Overload retVal="String" descr="64">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+                <Param name="Index int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELPARN" func="yes">
+            <Overload retVal="Int" descr="76">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELWEIGHT" func="yes">
+            <Overload retVal="Number" descr="65">
+                <Param name="Dimension str" />
+                <Param name="Element1 str" />
+                <Param name="Element2 str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="EXP" func="yes">
+            <Overload retVal="Number" descr="45">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="FEEDERS" />
+        <KeyWord name="FEEDSTRINGS" />
+        <KeyWord name="FILL" func="yes">
+            <Overload retVal="String" descr="82">
+                <Param name="String str" />
+                <Param name="Length int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="FV" func="yes">
+            <Overload retVal="Number" descr="194">
+                <Param name="Payment int" />
+                <Param name="Interest int" />
+                <Param name="Periods int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="INSRT" func="yes">
+            <Overload retVal="String" descr="76">
+                <Param name="String1 str" />
+                <Param name="String2 str" />
+                <Param name="Location int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="INT" func="yes">
+            <Overload retVal="Int" descr="80">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ISLEAF" func="yes">
+            <Overload retVal="Bit" descr="187">
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ISUND" func="yes">
+            <Overload retVal="Bit" descr="74">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="LN" func="yes">
+            <Overload retVal="Number" descr="54">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="LOG" func="yes">
+            <Overload retVal="Number" descr="55">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="LONG" func="yes">
+            <Overload retVal="Int" descr="36">
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="LOWER" func="yes">
+            <Overload retVal="String" descr="67">
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="MAX" func="yes">
+            <Overload retVal="Number" descr="51">
+                <Param name="Value1 int" />
+                <Param name="Value2 int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="MIN" func="yes">
+            <Overload retVal="Number" descr="52">
+                <Param name="Value1 int" />
+                <Param name="Value2 int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="MOD" func="yes">
+            <Overload retVal="Int" descr="60">
+                <Param name="Number int" />
+                <Param name="Divisor int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="MONTH" func="yes">
+            <Overload retVal="Int" descr="122">
+                <Param name="DateString str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="NOW" func="yes">
+            <Overload retVal="Date" descr="64">
+            </Overload>
+        </KeyWord>
+        <KeyWord name="NUMBR" func="yes">
+            <Overload retVal="Number" descr="36">
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="NValue" func="yes">
+            <Overload retVal="Number" descr="183">
+            </Overload>
+        </KeyWord>
+        <KeyWord name="PAYMT" func="yes">
+            <Overload retVal="Number" descr="202">
+                <Param name="Principal int" />
+                <Param name="Interest int" />
+                <Param name="Periods int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="PV" func="yes">
+            <Overload retVal="Number" descr="56">
+                <Param name="Payment int" />
+                <Param name="Interest int" />
+                <Param name="Periods int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="RAND" func="yes">
+            <Overload retVal="Number" descr="135">
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ROUND" func="yes">
+            <Overload retVal="Number" descr="100">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ROUNDP" func="yes">
+            <Overload retVal="Number" descr="62">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="SCAN" func="yes">
+            <Overload retVal="Int" descr="206">
+                <Param name="Substring str" />
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="SIGN" func="yes">
+            <Overload retVal="Number" descr="168">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="SIN" func="yes">
+            <Overload retVal="Number" descr="38">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="SKIPCHECK" />
+        <KeyWord name="SQRT" func="yes">
+            <Overload retVal="Number" descr="46">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="STET" />
+        <KeyWord name="STR" func="yes">
+            <Overload retVal="String" descr="34">
+                <Param name="Number int" />
+                <Param name="Length int" />
+                <Param name="Decimal int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="SUBST" func="yes">
+            <Overload retVal="String" descr="44">
+                <Param name="String str" />
+                <Param name="Start int" />
+                <Param name="Length int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="SValue" func="yes">
+            <Overload retVal="String" descr="194">
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TABDIM" func="yes">
+            <Overload retVal="String" descr="73">
+                <Param name="Cube str" />
+                <Param name="Index int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TAN" func="yes">
+            <Overload retVal="Number" descr="41">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TIME" func="yes">
+            <Overload retVal="String" descr="87">
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TIMST" func="yes">
+            <Overload retVal="String" descr="43">
+                <Param name="DateTime int" />
+                <Param name="Format str" />
+                <Param name="ExtendedYears bit" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TIMVL" func="yes">
+            <Overload retVal="Int" descr="88">
+                <Param name="DateTime int" />
+                <Param name="Type str" />
+                <Param name="ExtendedYears bit" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TODAY" func="yes">
+            <Overload retVal="String" descr="50">
+                <Param name="ReturnFourDigitYear bit" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TRIM" func="yes">
+            <Overload retVal="String" descr="82">
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="UNDEF" func="yes">
+            <Overload retVal="Undef" descr="128">
+            </Overload>
+        </KeyWord>
+        <KeyWord name="UNDEFVALS" />
+        <KeyWord name="UPPER" func="yes">
+            <Overload retVal="String" descr="43">
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="YEAR" func="yes">
+            <Overload retVal="Int" descr="65">
+                <Param name="DateString str" />
+            </Overload>
+        </KeyWord>
+    </AutoComplete>
+</NotepadPlus>
+<?xml version="1.0" encoding="Windows-1252" ?>
+<NotepadPlus>
+    <AutoComplete language="TM1-Rules">
+        <Environment ignoreCase="yes" startFunc="(" stopFunc=")" paramSeparator="," terminal=";" />
+        <KeyWord name="ACOS" func="yes">
+            <Overload retVal="Number" descr="54">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ASIN" func="yes">
+            <Overload retVal="Number" descr="52">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ATAN" func="yes">
+            <Overload retVal="Number" descr="94">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ATTRN" func="yes">
+            <Overload retVal="Number" descr="73">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+                <Param name="Attribute str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ATTRS" func="yes">
+            <Overload retVal="String" descr="72">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+                <Param name="Attribute str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="CAPIT" func="yes">
+            <Overload retVal="String" descr="63">
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="CHAR" func="yes">
+            <Overload retVal="Char" descr="68">
+                <Param name="Number int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="CODE" func="yes">
+            <Overload retVal="Int" descr="78">
+                <Param name="String str" />
+                <Param name="Location int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ConsolidateChildren" func="yes">
+            <Overload retVal="Number" descr="335">
+                <Param name="Dimension1 str" />
+                <Param name="Dimension2 str" />
+                <Param name="…" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ConsolidatedAvg" func="yes">
+            <Overload retVal="Number" descr="89">
+                <Param name="flag-value int" />
+                <Param name="cube-name str" />
+                <Param name="element_1 str" />
+                <Param name="element_2 str" />
+                <Param name="..." />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ConsolidatedCount" func="yes">
+            <Overload retVal="Number" descr="77">
+                <Param name="flag-value int" />
+                <Param name="cube-name str" />
+                <Param name="element_1 str" />
+                <Param name="element_2 str" />
+                <Param name="..." />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ConsolidatedMax" func="yes">
+            <Overload retVal="Number" descr="89">
+                <Param name="flag-value int" />
+                <Param name="cube-name str" />
+                <Param name="element_1 str" />
+                <Param name="element_2 str" />
+                <Param name="..." />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ConsolidatedMin" func="yes">
+            <Overload retVal="Number" descr="89">
+                <Param name="flag-value int" />
+                <Param name="cube-name str" />
+                <Param name="element_1 str" />
+                <Param name="element_2 str" />
+                <Param name="..." />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="CONTINUE" />
+        <KeyWord name="COS" func="yes">
+            <Overload retVal="Number" descr="56">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DATE" func="yes">
+            <Overload retVal="String" descr="93">
+                <Param name="SerialNumber int" />
+                <Param name="<ReturnFourDigitYear> bit" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DATES" func="yes">
+            <Overload retVal="String" descr="115">
+                <Param name="Year int" />
+                <Param name="Month int" />
+                <Param name="Day int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DAY" func="yes">
+            <Overload retVal="Int" descr="118">
+                <Param name="DateString str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DAYNO" func="yes">
+            <Overload retVal="Date" descr="74">
+                <Param name="DateString str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DB" func="yes">
+            <Overload retVal="Variant" descr="159">
+                <Param name="Cube str" />
+                <Param name="E1 str" />
+                <Param name="E2 str" />
+                <Param name="[...e256 str]" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DELET" func="yes">
+            <Overload retVal="String" descr="118">
+                <Param name="String str" />
+                <Param name="Start int" />
+                <Param name="Length int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DIMIX" func="yes">
+            <Overload retVal="Int" descr="64">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DIMNM" func="yes">
+            <Overload retVal="String" descr="80">
+                <Param name="Dimension str" />
+                <Param name="Index int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DIMSIZ" func="yes">
+            <Overload retVal="Int" descr="67">
+                <Param name="Dimension str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DNEXT" func="yes">
+            <Overload retVal="String" descr="97">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DNLEV" func="yes">
+            <Overload retVal="Int" descr="47">
+                <Param name="Dimension str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="DTYPE" func="yes">
+            <Overload retVal="Char" descr="208">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELCOMP" func="yes">
+            <Overload retVal="String" descr="165">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+                <Param name="Position int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELCOMPN" func="yes">
+            <Overload retVal="Int" descr="64">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELISANC" func="yes">
+            <Overload retVal="Bit" descr="90">
+                <Param name="Dimension str" />
+                <Param name="ParentElement str" />
+                <Param name="ChildElement str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELISCOMP" func="yes">
+            <Overload retVal="Bit" descr="87">
+                <Param name="Dimension str" />
+                <Param name="ChildElement str" />
+                <Param name="ParentElement str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELISPAR" func="yes">
+            <Overload retVal="Bit" descr="87">
+                <Param name="Dimension str" />
+                <Param name="ParentElement str" />
+                <Param name="ChildElement str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELLEV" func="yes">
+            <Overload retVal="Int" descr="57">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELPAR" func="yes">
+            <Overload retVal="String" descr="64">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+                <Param name="Index int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELPARN" func="yes">
+            <Overload retVal="Int" descr="76">
+                <Param name="Dimension str" />
+                <Param name="Element str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ELWEIGHT" func="yes">
+            <Overload retVal="Number" descr="65">
+                <Param name="Dimension str" />
+                <Param name="Element1 str" />
+                <Param name="Element2 str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="EXP" func="yes">
+            <Overload retVal="Number" descr="45">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="FEEDERS" />
+        <KeyWord name="FEEDSTRINGS" />
+        <KeyWord name="FILL" func="yes">
+            <Overload retVal="String" descr="82">
+                <Param name="String str" />
+                <Param name="Length int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="FV" func="yes">
+            <Overload retVal="Number" descr="194">
+                <Param name="Payment int" />
+                <Param name="Interest int" />
+                <Param name="Periods int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="INSRT" func="yes">
+            <Overload retVal="String" descr="76">
+                <Param name="String1 str" />
+                <Param name="String2 str" />
+                <Param name="Location int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="INT" func="yes">
+            <Overload retVal="Int" descr="80">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ISLEAF" func="yes">
+            <Overload retVal="Bit" descr="187">
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ISUND" func="yes">
+            <Overload retVal="Bit" descr="74">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="LN" func="yes">
+            <Overload retVal="Number" descr="54">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="LOG" func="yes">
+            <Overload retVal="Number" descr="55">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="LONG" func="yes">
+            <Overload retVal="Int" descr="36">
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="LOWER" func="yes">
+            <Overload retVal="String" descr="67">
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="MAX" func="yes">
+            <Overload retVal="Number" descr="51">
+                <Param name="Value1 int" />
+                <Param name="Value2 int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="MIN" func="yes">
+            <Overload retVal="Number" descr="52">
+                <Param name="Value1 int" />
+                <Param name="Value2 int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="MOD" func="yes">
+            <Overload retVal="Int" descr="60">
+                <Param name="Number int" />
+                <Param name="Divisor int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="MONTH" func="yes">
+            <Overload retVal="Int" descr="122">
+                <Param name="DateString str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="NOW" func="yes">
+            <Overload retVal="Date" descr="64">
+            </Overload>
+        </KeyWord>
+        <KeyWord name="NUMBR" func="yes">
+            <Overload retVal="Number" descr="36">
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="NValue" func="yes">
+            <Overload retVal="Number" descr="183">
+            </Overload>
+        </KeyWord>
+        <KeyWord name="PAYMT" func="yes">
+            <Overload retVal="Number" descr="202">
+                <Param name="Principal int" />
+                <Param name="Interest int" />
+                <Param name="Periods int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="PV" func="yes">
+            <Overload retVal="Number" descr="56">
+                <Param name="Payment int" />
+                <Param name="Interest int" />
+                <Param name="Periods int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="RAND" func="yes">
+            <Overload retVal="Number" descr="135">
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ROUND" func="yes">
+            <Overload retVal="Number" descr="100">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="ROUNDP" func="yes">
+            <Overload retVal="Number" descr="62">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="SCAN" func="yes">
+            <Overload retVal="Int" descr="206">
+                <Param name="Substring str" />
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="SIGN" func="yes">
+            <Overload retVal="Number" descr="168">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="SIN" func="yes">
+            <Overload retVal="Number" descr="38">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="SKIPCHECK" />
+        <KeyWord name="SQRT" func="yes">
+            <Overload retVal="Number" descr="46">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="STET" />
+        <KeyWord name="STR" func="yes">
+            <Overload retVal="String" descr="34">
+                <Param name="Number int" />
+                <Param name="Length int" />
+                <Param name="Decimal int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="SUBST" func="yes">
+            <Overload retVal="String" descr="44">
+                <Param name="String str" />
+                <Param name="Start int" />
+                <Param name="Length int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="SValue" func="yes">
+            <Overload retVal="String" descr="194">
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TABDIM" func="yes">
+            <Overload retVal="String" descr="73">
+                <Param name="Cube str" />
+                <Param name="Index int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TAN" func="yes">
+            <Overload retVal="Number" descr="41">
+                <Param name="X int" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TIME" func="yes">
+            <Overload retVal="String" descr="87">
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TIMST" func="yes">
+            <Overload retVal="String" descr="43">
+                <Param name="DateTime int" />
+                <Param name="Format str" />
+                <Param name="ExtendedYears bit" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TIMVL" func="yes">
+            <Overload retVal="Int" descr="88">
+                <Param name="DateTime int" />
+                <Param name="Type str" />
+                <Param name="ExtendedYears bit" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TODAY" func="yes">
+            <Overload retVal="String" descr="50">
+                <Param name="ReturnFourDigitYear bit" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="TRIM" func="yes">
+            <Overload retVal="String" descr="82">
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="UNDEF" func="yes">
+            <Overload retVal="Undef" descr="128">
+            </Overload>
+        </KeyWord>
+        <KeyWord name="UNDEFVALS" />
+        <KeyWord name="UPPER" func="yes">
+            <Overload retVal="String" descr="43">
+                <Param name="String str" />
+            </Overload>
+        </KeyWord>
+        <KeyWord name="YEAR" func="yes">
+            <Overload retVal="Int" descr="65">
+                <Param name="DateString str" />
+            </Overload>
+        </KeyWord>
+    </AutoComplete>
+</NotepadPlus>

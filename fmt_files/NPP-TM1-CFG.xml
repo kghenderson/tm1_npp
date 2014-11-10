@@ -1,0 +1,36 @@
+<NotepadPlus>
+    <UserLang name="TM1-CFG" ext=".cfg">
+        <Settings>
+            <Global caseIgnored="yes" />
+            <TreatAsSymbol comment="no" commentLine="yes" />
+            <Prefix words1="no" words2="no" words3="no" words4="no" />
+        </Settings>
+        <KeywordLists>
+            <Keywords name="Delimiters">&apos;00&apos;00</Keywords>
+            <Keywords name="Folder+"></Keywords>
+            <Keywords name="Folder-"></Keywords>
+            <Keywords name="Operators">- ! % &amp; ( ) * , / : ; @ [ \ ] ^ { | } + &lt; = &gt;</Keywords>
+            <Keywords name="Comment">1 2 0#</Keywords>
+            <Keywords name="Words1">AllowMultiModes AllowReadOnlyChoreReschedule AllowSeparateNandCRules AllRuleCalcStargateOptimization AuditLogMaxFileSize AuditLogMaxQueryMemory AuditLogMaxTempFileSize AuditLogUpdateInterval CalculationThresholdForStorage CAMPortalVariableFile CAMSSLCertificate CheckFeedersMaximumCells ClientPingCAMPassport ClientPropertiesSyncInterval ClientVersionMaximum ClientVersionMinimum ClientVersionPrecision DefaultMeasuresDimension DisableMemoryCache DisableSandboxing DisableWorksheetView Display_Info_DBType_R8 DownTime ExcelWebPublishEnabled IPVersion JobQueueMaxWaitTime JobQueueThreadPoolSize JobQueueThreadSleepTime JobQueuing Language LDAPPasswordFile LDAPPasswordKeyFile LDAPUseServerAccount LockPagesInMemory LogReleaseLineCount MaskUserNameInServerTools MaximumLoginAttempts MaximumMemoryForSubsetUndo MaximumSynchAttempts MaximumTILockObjects MaxUndoHoldLineCount MessageCompression NetRecvBlockingWaitLimitSeconds NetRecvMaxClientIOWaitWithinAPIsSeconds PasswordMinimumLength PasswordSource PrivilegeGenerationOptimization ProgressMessage ProportionSpreadToZeroCells ReceiveProgressResponseTimeoutSecs RulesOverwriteCellsOnLoad RunningInBackground SAPLogFilePath SAPLoggingEnabled SaveTime SecurityPackageName ServerCAMIPVersion SkipLoadingAliases SkipSSLCAMHostCheck SpreadingPrecision SpreadingPrecision (Consolidated Holds) SubsetElementBreatherCount SyncUnitSize UseLocalCopiesforPublicDynamicSubsets UserDefinedCalculations UseSQLExtenedFetch UseSQLFetch UseSQLFetchScroll UseSSL UseStargateForRules ViewConsolidationOptimization ViewConsolidationOptimizationMethod</Keywords>
+            <Keywords name="Words2">AdminHost AuditLogOn ClientCAMURI ClientMessagePortNumber CognosInterfacePath DataBaseDirectory DistributedPlanningOutputDir GroupsCreationLimit IdleConnectionTimeOutSeconds IntegratedSecurityMode IPAddress LoggingDirectory MaximumCubeLoadThreads MaximumUserSandboxSize MaximumViewSize ParallelInteraction&#x00A0; PerformanceMonitorOn PersistentFeeders PortNumber RawStoreDirectory ServerCAMURI ServerLogging ServerName ServerPrincipalName StartupChores</Keywords>
+            <Keywords name="Words3"></Keywords>
+            <Keywords name="Words4"></Keywords>
+        </KeywordLists>
+        <Styles>
+            <WordsStyle name="DEFAULT" styleID="11" fgColor="4D4D4C" bgColor="FFFFFF" fontName="Lucida Console" fontStyle="0" />
+            <WordsStyle name="FOLDEROPEN" styleID="12" fgColor="4271AE" bgColor="FFFFFF" fontName="Lucida Console" fontStyle="0" />
+            <WordsStyle name="FOLDERCLOSE" styleID="13" fgColor="4271AE" bgColor="FFFFFF" fontName="Lucida Console" fontStyle="0" />
+            <WordsStyle name="KEYWORD1" styleID="5" fgColor="4271AE" bgColor="FFFFFF" fontName="Lucida Console" fontStyle="0" />
+            <WordsStyle name="KEYWORD2" styleID="6" fgColor="C82829" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="KEYWORD3" styleID="7" fgColor="808080" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="KEYWORD4" styleID="8" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="COMMENT" styleID="1" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="COMMENT LINE" styleID="2" fgColor="808080" bgColor="FFFFFF" fontName="Lucida Console" fontStyle="2" />
+            <WordsStyle name="NUMBER" styleID="4" fgColor="F5871F" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="OPERATOR" styleID="10" fgColor="4D4D4C" bgColor="FFFFFF" fontName="Lucida Console" fontStyle="0" />
+            <WordsStyle name="DELIMINER1" styleID="14" fgColor="718C00" bgColor="FFFFFF" fontName="Lucida Console" fontStyle="0" />
+            <WordsStyle name="DELIMINER2" styleID="15" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="DELIMINER3" styleID="16" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+        </Styles>
+    </UserLang>
+</NotepadPlus>
