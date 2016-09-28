@@ -1,0 +1,35 @@
+# tm1_rules_sample.rux
+
+SKIPCHECK; 
+
+################################################################################
+
+#""" comments are only allowed at the leaf level """ 
+
+['Comment']=S: IF( ISLEAF=0, '', STET );
+
+
+################################################################################
+
+#""" this section of code
+#    does something very important """
+
+[ {'somevalue'} ] = N:  
+  #~ this is an inline comment
+  IF(DB('SomeCube', !SomeDim, 'SomeMeasure') @= 'X'
+  , ['SomeValue'] * 99
+  , CONTINUE
+  )
+;
+
+#todo: check on something relevant and important
+
+
+################################################################################
+
+FEEDERS; 
+
+
+
+
+
